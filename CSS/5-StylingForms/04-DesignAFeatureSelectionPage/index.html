@@ -1,0 +1,74 @@
+<!-- Özellik Seçim Sayfası Tasarlayın
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Sayfanızda "Feature Selection" metnini içeren bir h1 öğesi bulunmalıdır.
+2. Sayfanızda "feature-card-container" sınıfına sahip bir div öğesi bulunmalıdır.
+3. Sayfanızda, div öğesinin içinde her biri "feature-card" sınıfına sahip en az iki label öğesi bulunmalıdır.
+4. Her bir label öğesinin içinde bir etiket metni ve checkbox türünde bir input öğesi bulunmalıdır.
+5. Onay kutularını hedefleyen bir seçici oluşturun ve aşağıdaki stil özelliklerini uygulayın:
+• CSS dosyanızda tüm onay kutusu öğelerinizin `appearance: none;` olarak ayarlanması gerekir.
+• Tüm onay kutusu öğelerinizde, istediğiniz kenarlık genişliği, rengi ve stili ayarlanmalıdır.
+6. Onay kutusu işaretlendiğinde, kutunun ortasında bir onay işareti ✓ görünmelidir.
+7. Onay kutusu işaretlendiğinde, kutunun arka plan rengi seçtiğiniz bir renge dönüşmelidir.
+8. Onay kutusu işaretlendiğinde, kutunun kenarlık rengi seçtiğiniz bir renge dönüşmelidir.
+
+Not: CSS dosyanızı HTML dosyanıza eklediğinizden emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature Selection</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Feature Selection</h1>
+    <div class="feature-card-container">
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>Cloud Storage</h4>
+        <p>100 Gigabyte secure storage</p>
+      </label>
+
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>Dedicated Support</h4>
+        <p>24/7 customer help</p>
+      </label>
+
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>Advanced Analytics</h4>
+        <p>Insights &amp; reports</p>
+      </label>
+
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>Custom User Themes</h4>
+        <p>Personalized dashboard design</p>
+      </label>
+
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>Multi-User Collab</h4>
+        <p>Team access and sharing</p>
+      </label>
+
+      <label class="feature-card">
+        <input type="checkbox" />
+        <h4>API Access</h4>
+        <p>Integrate with your custom built tools</p>
+      </label>
+    </div>
+  </body>
+</html>
