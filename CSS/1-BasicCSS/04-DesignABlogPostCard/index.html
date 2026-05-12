@@ -1,0 +1,67 @@
+<!-- Bir Blog Yazısı Kartı Tasarlayın
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Bu çalışmada, bir blog yazısı kartı oluşturarak arka planları ve kenarlıkları nasıl biçimlendireceğinizi öğreneceğiz.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Tüm kart öğelerinizi barındıracak, sınıfı `blog-post-card` olan bir `div` öğesi olmalıdır.
+2. `.blog-post-card` öğesinin içinde, geçerli bir `alt` özniteliği ve metni olan, sınıfı `post-img` olan bir `image` öğesi bulunmalıdır. 
+Resmin `src` özniteliği için https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg adresini kullanabilirsiniz.
+3. .blog-post-card öğesinin içinde, post-content sınıfına sahip ve aşağıdaki içeriği barındıran bir div öğesi bulunmalıdır:
+• "post-title" sınıfına sahip bir h2 öğesi ve blog yazınızın başlığını içeren metin.
+• "post-excerpt" sınıfına sahip bir p öğesi ve blog yazınızı özetleyen metin.
+• "read-more" sınıfına sahip bir a öğesi ve "Devamını Oku" metni.
+4. body öğesinin arka plan rengini beyaz dışında bir değere ayarlamalısınız.
+5. .blog-post-card öğesine aşağıdaki stilleri uygulamalısınız:
+• Beyaz bir arka plan.
+• Yuvarlatılmış köşeler.
+• İstediğiniz genişlik.
+• İstediğiniz metin hizalaması.
+6. .post-img öğesi, resmin kartın tüm genişliğini kaplayacak ve alt kenarlığı olacak şekilde biçimlendirilmelidir.
+7. .post-content öğesi, kartın içinde iç boşluk kalacak şekilde biçimlendirilmelidir.
+8. .post-title ve .post-excerpt öğelerinin metin rengi varsayılan renginden farklı olmalı ve her yönden kenar boşlukları bulunmalıdır.
+9. .read-more öğesi bir düğme gibi biçimlendirilmeli ve şunlara sahip olmalıdır:
+• Varsayılanın dışındaki bir metin rengi.
+• Bir arka plan rengi.
+• Her yönden kenar boşlukları.
+• Her yönden iç boşluklar.
+• Yuvarlatılmış köşeler.
+• inline-block olarak ayarlanmış bir görüntüleme özelliği.
+• Arka plan rengini değiştiren bir fareyle üzerine gelme efekti.
+
+Not: Stil sayfanızı HTML dosyanıza eklediğinizden ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="blog-post-card">
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg"
+        alt="Blog Post Image"
+        class="post-img"
+      />
+      <div class="post-content">
+        <h2 class="post-title">Learn Web Development in 2024</h2>
+        <p class="post-excerpt">
+          Stay ahead of the curve with the latest trends in web development.
+          Discover what's new and exciting in 2024
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </body>
+</html>
