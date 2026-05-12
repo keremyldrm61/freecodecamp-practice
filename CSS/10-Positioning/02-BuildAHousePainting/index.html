@@ -1,0 +1,54 @@
+<!-- Bir Ev Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Bu alıştırmada, bir evin yapısını oluşturmak için HTML kullanacağız. 
+Ardından, evinizin pencere ve kapı gibi öğelerini düzenlemek için CSS konumlandırma özelliklerini kullanacağız.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testleri geçerek alıştırmayı tamamlayın.
+
+Kullanıcı Hikayeleri:
+
+1. "house" kimliğine sahip bir div öğeniz olmalıdır.
+2. #house öğenizin "position" özelliği "relative" olarak ayarlanmalıdır; böylece alt öğeleri bu öğeye göre konumlandırılabilir.
+3. #house öğenizin genişliği 500 piksel, yüksekliği ise 400 piksel olmalıdır. Minimum veya maksimum değerler belirlemeyin.
+4. #house öğesinin bir arka plan rengi ve kenarlığı ayarlanmış olmalıdır.
+5. #house öğesinin içinde şu kimlik değerlerine sahip beş div öğesi bulunmalıdır: chimney, roof, window-1, window-2 ve door.
+6. #house öğesinin tüm doğrudan alt öğelerinin konumu "absolute" olmalıdır.
+7. #roof, #chimney, #window-1, #window-2 ve #door öğelerinin genişlik, yükseklik, kenarlık ve arka plan rengi ayarlanmış olmalıdır.
+8. #çatı öğenizin üst değeri 0 olmalıdır.
+9. #kapı öğeniz evinizin en altına yerleştirilmelidir.
+10. Pencereleriniz #çatı öğenizin altına ve en az #kapı öğenizin yüksekliğinin üçte birinden daha yükseğe yerleştirilmelidir.
+11. Hem pencerelerinizin hem de kapınızın "sol" veya "sağ" ayarları, bunları evin sınırları içine yerleştirecek bir değere ayarlanmalıdır.
+12. #Baca öğenizin, onu #ev öğesinin en üstüne yerleştiren bir üst değeri olmalıdır.
+13. #Baca öğenizin, onu ev öğesinin arkasına yerleştiren bir z-index değeri olmalıdır.
+
+Not: CSS'inizi uygulamak için HTML dosyanızda stil sayfanızı bağladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Painting</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="house">
+      <div id="chimney">
+        <div id="smoke"></div>
+      </div>
+      <div id="roof"></div>
+      <div id="window-1"></div>
+      <div id="window-2"></div>
+      <div id="door">
+        <div id="door-knob"></div>
+      </div>
+      <div id="welcome">WELCOME</div>
+    </div>
+  </body>
+</html>
