@@ -1,0 +1,64 @@
+<!-- Bir Gazete Makalesi Oluşturun
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin.
+
+Kullanıcı Hikayeleri: 
+
+1. HTML belgenizin temel yazı tipi boyutunu 24 piksel olarak ayarlamalısınız.
+2. Diğer tüm öğelerinizi içeren, sınıfı "newspaper" olan bir öğe olmalıdır.
+3. .newspaper öğenizin yazı tipi boyutu 16 piksel olmalı ve yazı tipi olarak Open Sans, yedek yazı tipi olarak ise sans-serif kullanılmalıdır.
+4. .newspaper öğenizin içinde en az yedi öğe daha bulunmalıdır: 
+• biri name sınıfına sahip gazete adı için, 
+• biri date sınıfına sahip makale tarihi için, 
+• biri headline sınıfına sahip başlık için, 
+• biri sub-headline sınıfına sahip alt başlık için, 
+• biri author sınıfına sahip yazar için ve her biri text sınıfına sahip iki paragraf. 
+Bu öğelerin tümü makale bilgilerinizle doldurulmalıdır.
+5. .name öğenizin yazı tipi boyutu, kök öğenin yazı tipi boyutunun iki katı olmalı ve Times New Roman yazı tipini kullanmalı; yedek yazı tipi olarak da serif yazı tipi seçilmelidir.
+6. .name ve .author öğelerinizde, tüm karakterleri büyük harf yapmak için CSS kullanılmalıdır.
+7. .headline öğenizin yazı tipi boyutu, üst öğesinin yazı tipi boyutunun iki katı olmalı ve kalın yazılmalıdır.
+8. .sub-headline öğenizin font-weight değeri 100 olmalı, font-size değeri üst öğesinin font-size değerinin 1,5 katı olmalı ve italik olarak gösterilmelidir.
+9. .author öğenizi kalın göstermek için CSS kullanmalısınız.
+10. .text öğelerinizin text-indent değeri 20 piksel olmalıdır.
+11. .text öğelerinizin line-height değeri, üst öğenin font-size değerinin iki katı olmalıdır.
+12. .text öğelerinizin ilk harfi kalın olmalı ve üst öğenin font-size değerinin iki katı büyüklüğünde olmalıdır. Bunun için ::first-letter seçicisini kullanın.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Chuckles</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="newspaper">
+      <h1 class="name">Daily Chuckles</h1>
+      <p class="date">July 5, 2024</p>
+      <h2 class="headline">Breaking: Grandma Edna Saves Earth</h2>
+      <h3 class="sub-headline">
+        Alien Invasion Foiled by Tech-Savvy Grandma's Wi-Fi Password
+      </h3>
+      <p class="author">By Jane Doe</p>
+      <p class="text">
+        In an extraordinary twist of fate, Grandma Edna found herself at the
+        forefront of a potential crisis when her clever Wi-Fi security measures
+        unexpectedly thwarted an alien invasion. As alien spacecraft descended
+        upon the town, panic spread until Grandma Edna calmly intervened,
+        resetting her router with a cryptic passphrase known only to her.
+      </p>
+      <p class="text">
+        The aliens, encountering unforeseen technological barriers, struggled to
+        breach Grandma Edna's fortified network. Frustrated and bewildered, they
+        eventually retreated to reassess their invasion strategy, leaving
+        residents both relieved and amazed at Grandma Edna's resourcefulness.
+      </p>
+    </main>
+  </body>
+</html>
