@@ -1,0 +1,110 @@
+<!-- Bir Etkinlik Merkezi Oluşturun
+ 
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Bu laboratuvarda, bir web sayfasının yapısını oluşturmak için anlamsal HTML öğelerini kullanacaksınız. Sayfanın gerçek bir etkinlik merkezi gibi görünmesi için içerik ve görseller ekleyeceksiniz.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Bir başlık öğeniz olmalıdır.
+2. Başlık öğesinin içinde, "Event Hub" metnini içeren bir h1 öğesi ve bir nav öğesi bulunmalıdır.
+3.Nav öğesinin içinde, sayfanın farklı bölümlerine bağlantılar içeren iki maddelik sıralanmamış bir liste bulunmalıdır. 
+İlk maddenin metni "Yaklaşan Etkinlikler", ikinci maddenin metni ise "Geçmiş Etkinlikler" olmalıdır.
+4. Her bağlantı, sayfanın ilgili bölümüne (sırasıyla #upcoming-events ve #past-events) yönlendiren bir href özniteliğine sahip bir a öğesiyle temsil edilmelidir.
+5. Sayfanın farklı bölümlerini içeren bir main öğesi olmalıdır.
+6. main öğesinin içinde iki section öğesi bulunmalıdır.
+7. İlk bölüm öğesinin, değeri "upcoming-events" olan bir id özniteliği olmalıdır.
+8.#upcoming-events bölümü içinde şunlar bulunmalıdır:
+• "Yaklaşan Etkinlikler" metnini içeren bir h2 öğesi.
+• İki adet article öğesi. Her bir article öğesi bir etkinliği temsil etmeli ve şunları içermelidir:
+  • Etkinlik başlığı için bir h3 öğesi.
+  • Etkinlik açıklaması için bir p öğesi. İsterseniz en alta bir tarih ekleyebilirsiniz.
+
+9. İkinci bölüm öğesinin, değeri "past-events" olan bir id özniteliği olmalıdır.
+
+10. #past-events bölümü içinde şunlar bulunmalıdır:
+• "Geçmiş Etkinlikler" metnini içeren bir h2 öğesi.
+• İki adet article öğesi. Her bir article öğesi bir geçmiş etkinliği temsil etmeli ve şunları içermelidir:
+  • Etkinlik başlığı için bir h3 öğesi,
+  • Etkinlik açıklaması için bir p öğesi. İsterseniz en alta bir tarih ekleyebilirsiniz.
+  • src özniteliği bir resim dosyasına yönlendiren ve alt özniteliğinde resmin açıklaması bulunan bir resim öğesi.
+
+Not: Etkinlik açıklamaları ve tarihleri için istediğiniz herhangi bir metni kullanabilirsiniz. İsterseniz resimler için aşağıdaki resim URL'lerini kullanabilirsiniz:
+• https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg
+• https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Hub</title>
+  </head>
+  <body>
+    <header>
+      <h1>Event Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="#upcoming-events">Upcoming Events</a></li>
+          <li><a href="#past-events">Past Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <article>
+          <h3>AI &amp; Machine Learning Conference 2024</h3>
+          <p>
+            Join us for a deep dive into the latest advancements in artificial
+            intelligence and machine learning. Industry leaders will share
+            insights and case studies on how AI is transforming various sectors.
+          </p>
+          <p>Date: August 10, 2024</p>
+        </article>
+        <article>
+          <h3>Web Development Bootcamp</h3>
+          <p>
+            A hands-on workshop designed for developers looking to enhance their
+            skills in modern web technologies including React, Node.js, and
+            GraphQL. Perfect for both beginners and experienced developers.
+          </p>
+          <p>Date: September 5, 2024</p>
+        </article>
+      </section>
+      <section id="past-events">
+        <h2>Past Events</h2>
+        <article>
+          <h3>Cybersecurity Summit 2024</h3>
+          <p>
+            An event focusing on the latest trends and threats in cybersecurity.
+            Experts discussed strategies for protecting data and ensuring
+            privacy in an increasingly digital world.
+          </p>
+          <p>Date: June 15, 2024</p>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/labs/past-event1.jpg"
+            alt="Image from Cybersecurity Summit 2024"
+          />
+        </article>
+        <article>
+          <h3>Blockchain Expo 2024</h3>
+          <p>
+            A comprehensive event covering the future of blockchain technology.
+            Topics included decentralized finance (DeFi), smart contracts, and
+            the impact of blockchain on various industries.
+          </p>
+          <p>Date: July 20, 2024</p>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+            alt="Image from Blockchain Expo 2024"
+          />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
