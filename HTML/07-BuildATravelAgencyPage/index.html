@@ -1,0 +1,88 @@
+<!-- Bir Seyahat Acentesi Sayfası Oluşturun
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın; ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri:
+
+1. Bir DOCTYPE bildirimi olmalıdır.
+2. lang özniteliği en olarak ayarlanmış bir html öğesi olmalıdır.
+3. charset özniteliği utf-8 olarak ayarlanmış bir meta void öğesi ve "Seyahat Acentesi Sayfası" metnini içeren bir başlık içeren bir head öğesi olmalıdır.
+4. Head öğenizde, SEO için web sitenizin kısa bir açıklamasını içeren bir meta etiketi olmalıdır.
+5. Seyahat destinasyonlarınızı sunmak için bir h1 öğesi olmalıdır.
+6. H1 öğesinin altında, seyahat fırsatlarını tanıtan bir paragraf olmalıdır.
+7. "Paketler" metnini içeren bir h2 öğesi olmalıdır.
+8. Çeşitli paketleri kısaca tanıtan bir p öğesi olmalıdır.
+9. İki liste öğesi içeren bir sıralanmamış liste öğesi olmalıdır. Bu iki liste öğesinin metinleri sırasıyla "Grup Seyahatleri" ve "Özel Turlar" olmalıdır. Her bir liste öğesinin metni bir bağlantı öğesi ile çevrelenmelidir.
+10. Sayfanızda "En Popüler Seyahat Programları" metnini içeren bir h2 öğesi bulunmalıdır.
+11. Sayfanızda, her biri bir anchor öğesi ve bir figcaption öğesi içeren en az üç fig öğesi bulunmalıdır.
+12. Bu üç bağlantı öğesinin içeriğinde, uygun bir alt özniteliğine sahip ve src özniteliği geçerli bir resme ayarlanmış bir img öğesi bulunmalıdır. 
+İsterseniz https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg, https://cdn.freecodecamp.org/curriculum/labs/alps.jpg ve https://cdn.freecodecamp.org/curriculum/labs/sea.jpg adreslerini kullanabilirsiniz.
+13. Beş bağlantı öğenizin tümünde, değeri https://www.freecodecamp.org/learn olan bir href özniteliği ve değeri _blank olan bir target özniteliği bulunmalıdır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is an example website." />
+    <title>Travel Agency Page</title>
+  </head>
+  <body>
+    <h1>Discover Italy</h1>
+    <p>
+      Art, folklore, food, nature, and more. Choose among our wide selection of
+      guided tours and excursions, and live an unforgettable experience
+      exploring Italy.
+    </p>
+    <h2>Packages</h2>
+    <p>
+      We offer an extensive range of holiday solutions to accommodate the needs
+      of all our clients. From daily excursions in the most beautiful cities, to
+      thorough tours of hidden villages and medieval towns to discover Italy's
+      lesser-known sides.
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.freecodecamp.org/learn" target="_blank"
+          >Group Travels</a
+        >
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/learn" target="_blank"
+          >Private Tours</a
+        >
+      </li>
+    </ul>
+    <h2>Top Itineraries</h2>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg"
+          alt="colosseum view"
+        />
+      </a>
+      <figcaption>Rome and Center Italy</figcaption>
+    </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg"
+          alt="dolomites mountain view"
+        />
+      </a>
+      <figcaption>Nature and National Parks</figcaption>
+    </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg"
+          alt="sea view"
+        />
+      </a>
+      <figcaption>South Italy and Islands</figcaption>
+    </figure>
+  </body>
+</html>
