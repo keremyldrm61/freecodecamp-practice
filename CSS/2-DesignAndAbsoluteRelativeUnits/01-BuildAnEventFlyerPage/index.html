@@ -1,0 +1,84 @@
+<!-- Etkinlik Broşürü Sayfası Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Body etiketinin içinde bir header öğesi bulunmalıdır.
+2. Header öğenizde, sırasıyla etkinliğinizin resmini ve etkinlik başlığınızı içeren bir h1 etiketi bulunmalıdır. 
+İsterseniz şu resmi kullanabilirsiniz: 
+https://cdn.freecodecamp.org/curriculum/labs/event.jpg
+3. Body etiketinin içinde bir main öğesi bulunmalıdır.
+4. Ana öğenizin içinde, etkinliğin özelliklerini gösteren en az iki bölüm öğesi bulunmalıdır.
+5. Her bir bölüm öğenizin içinde bir h2 etiketi bulunmalıdır.
+6. Body öğesinin üst ve alt dolgusu 50 piksel olmalıdır.
+7. Body öğesinin üst ve alt kenar boşluğu 0 olmalı, sol ve sağ kenar boşluğu ise öğeyi ortalayacak şekilde ayarlanmalıdır.
+8. Body öğesinin genişliği, görüntü alanının genişliğine göre ayarlanmalıdır.
+9. Body öğesi, calc işlevini kullanarak min-height özelliğini, görüntü alanının yüksekliğinin %100'ünden body öğesinin üst ve alt kısmına uygulanan tüm dolguların çıkarılmasıyla elde edilen değere ayarlamalıdır.
+10. El ilanınızda en az bir hr öğesi bulunmalıdır.
+11. Tüm hr ve section öğelerinin genişliğini, üst öğelerine göre yüzde olarak belirlemelisiniz.
+
+Not: HTML dosyanıza stil sayfanızı eklediğinizden ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build an Event Flyer Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/rock.jpg" />
+      <h1>Pet Rock Festival</h1>
+      <p>Join us for the first annual Pet Rock Festival!</p>
+      <p>
+        <b>When:</b> <time datetime="2025-10-03">October 3rd</time>
+        <b>Where:</b> Boulder Park
+      </p>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>Festival Highlights</h2>
+        <ul>
+          <li>Pet Rock Obedience Shows</li>
+          <li>Best Dressed Pet Rock Contest</li>
+          <li>Pet Rock Uphill Racing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Special Guests</h2>
+        <ul>
+          <li>John Gravel</li>
+          <li>Wendy Cobblestone</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Food Trucks</h2>
+        <ul>
+          <li>Rock 'n' Roll Tacos</li>
+          <li>Granite Grill</li>
+          <li>Stone Cold Smoothies</li>
+        </ul>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>© 2025 Pet Rock Festival</p>
+    </footer>
+  </body>
+</html>
