@@ -1,0 +1,44 @@
+<!-- Bağış Formunda Hata Ayıklama
+
+Yerel bir yardım kuruluşu bir bağış formu web sitesi oluşturdu, ancak düzeltilmesi gereken birkaç sorun var. Form erişilebilir değil ve bazı HTML sözdizimi hataları içeriyor.
+
+Göreviniz, formun düzgün çalışması ve tüm kullanıcılar için erişilebilir olması için tüm hataları düzeltmektir. 
+Aşağıdaki kullanıcı hikayelerindeki adımları tamamlayın.
+
+Kullanıcı Hikayeleri:
+
+1. Giriş öğeleri boş öğelerdir ve kapanış etiketleri içermemelidir. Formdan tüm </input> kapanış etiketlerini kaldırın.
+2. Kullanıcıların her bir alanın ne işe yaradığını anlayabilmesi için her form giriş alanına etiket öğeleri ekleyin. Etiket metni, her giriş alanının yanında şu anda bulunan metinle aynı olmalıdır.
+3. "E-posta Adresi" giriş türü, "text" yerine "email" olmalıdır.
+4. Her bir etiket öğesini, etiketteki for özniteliği ve giriş öğesindeki eşleşen id özniteliğini kullanarak ilgili giriş öğesiyle ilişkilendirmelisiniz.
+5. Kullanıcıların gerekli bilgileri girmelerini sağlamak için metin, e-posta ve sayı giriş alanlarına (ancak onay kutusu veya gönder düğmesine değil) required özniteliğini ekleyin.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Donation Form</title>
+  </head>
+  <body>
+    <h1>Donation Form</h1>
+    <form>
+      <label for="name"> Full Name: </label>
+      <input id="name" type="text" name="name" required />
+
+      <label for="email"> Email Address: </label>
+      <input id="email" type="email" name="email" required />
+
+      <label for="amount"> Donation Amount ($): </label>
+      <input id="amount" type="number" name="amount" required />
+
+      <label for="newsletter"> Subscribe </label>
+      <input id="newsletter" type="checkbox" name="newsletter" />
+
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>
