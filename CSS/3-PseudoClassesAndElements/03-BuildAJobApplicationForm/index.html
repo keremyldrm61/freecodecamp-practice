@@ -1,0 +1,103 @@
+<!-- İş Başvuru Formu Oluşturma
+
+Bu örnek projeyle işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, kendi kişisel tarzınızı yansıtın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. "container" sınıfına sahip bir div öğesi olmalıdır.
+2. Bu div öğesinin içinde bir form öğesi bulunmalıdır.
+3. Formda, kullanıcının tam adını girmek için "type" özelliği "text" ve "id" özelliği "name" olan bir input öğesi bulunmalıdır.
+4. Kullanıcının e-posta adresini girmek için "type" özelliği "email" ve "id" özelliği "email" olan başka bir input öğesi bulunmalıdır.
+5. Formda, kullanıcıların bir iş pozisyonu seçebilmelerini sağlayan ve "position" kimliğine sahip bir select öğesi bulunmalıdır.
+6. "radio-group" sınıfına sahip bir fieldset öğesi olmalıdır.
+7. .radio-group içinde, çalışma saatleri seçeneklerini (ör. Tam Zamanlı, Yarı Zamanlı) seçmek için "radio" türünde bir dizi input öğesi ve ilgili etiketler bulunmalıdır. Grubun adı "availability" olmalıdır.
+8. Mesaj girmek için "message" kimliğine sahip bir textarea öğesi olmalıdır.
+9. Her giriş öğesini bir etiket öğesiyle ilişkilendirmelisiniz.
+10. Formu göndermek için türü "submit" olan bir düğme öğesi olmalıdır.
+11. Odaklandığında kenarlık rengini değiştirmek için giriş ve metin alanı öğelerine :focus sözde sınıfını ekleyin.
+12. Giriş, seçim ve metin alanı öğeleri, geçersiz bir giriş algılandığında kenarlık rengini kırmızıya çeviren bir :invalid sözde sınıfına sahip olmalıdır.
+13. input, select ve textarea öğeleri, geçerli bir giriş yapıldığında kenarlık rengini yeşile çeviren bir :valid sözde sınıfına sahip olmalıdır.
+14. button öğesi, üzerine fareyle gelindiğinde arka plan rengini değiştiren bir :hover sözde sınıfına sahip olmalıdır.
+15. Radyo düğmesi seçildiğinde kenarlık rengi, arka plan rengi ve kutu gölgesi eklemek için .radio-group input[type="radio"] öğesinde :checked sözde sınıfını kullanın.
+16. Seçenek seçildiğinde ilgili etiketin metin rengini değiştirmek için radyo düğmelerinde :checked sözde sınıfını kullanın.
+17. İlk giriş alanını farklı şekilde biçimlendirmek için giriş öğesine :first-of-type sözde sınıfını ekleyin (ör. yuvarlatılmış köşeler).
+
+Not: Stil sayfanızı HTML dosyanıza bağladığınızdan ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Application Form</h1>
+      <form id="job-application">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required=""
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required=""
+        />
+
+        <label for="position">Position:</label>
+        <select id="position" name="position" required="">
+          <option value="">Select a position</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Availability:</legend>
+          <input
+            type="radio"
+            id="fullTime"
+            name="availability"
+            value="fullTime"
+            checked=""
+          />
+          <label for="fullTime">Full-Time</label>
+          <input
+            type="radio"
+            id="partTime"
+            name="availability"
+            value="partTime"
+          />
+          <label for="partTime">Part-Time</label>
+        </fieldset>
+
+        <label for="message">Why do you want this job?</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your motivation"
+          required=""
+        ></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
