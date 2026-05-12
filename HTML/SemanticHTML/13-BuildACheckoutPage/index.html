@@ -1,0 +1,99 @@
+<!-- Ödeme Sayfası Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın; kendi kişisel tarzınızı yansıtın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testlerin başarılı olmasını sağlayarak laboratuvarı tamamlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. "Checkout" metnini içeren bir h1 öğesi olmalıdır.
+2. h1 öğesinin hemen ardından iki section öğesi bulunmalıdır.
+3. İlk bölümde "Sepetiniz" metnini içeren bir h2 öğesi bulunmalıdır.
+4. İlk bölümde uygun alternatif metne sahip bir ürün resmi bulunmalıdır. İsterseniz şu resmi kullanabilirsiniz: 
+https://cdn.freecodecamp.org/curriculum/labs/cube.jpg
+5. İkinci bölümde "Ödeme Bilgileri" metnini içeren bir h2 öğesi bulunmalıdır.
+6. İkinci bölümde bir form öğesi bulunmalıdır.
+7. Formunuzda, "card-name" kimliği ve adı olan, türü "text" olan bir input öğesi ve buna bağlı bir etiket bulunmalıdır.
+8. Formunuzda, "card-number" kimliği ve adı olan, türü "text" olan bir input öğesi ve buna bağlı bir etiket bulunmalıdır.
+9. En az iki adet required özniteliğine sahip input öğeniz olmalıdır.
+10. Gerekli alanların görsel olarak belirtilmesi için, her bir zorunlu giriş alanı için etiket öğesinin içine * metnini içeren ve aria-hidden özelliği true olarak ayarlanmış bir span öğesi eklemelisiniz.
+11. Kart numarası giriş alanının hemen arkasına, gerekli kart numarası formatını açıklayan bir yardım metni içeren bir p öğesi yerleştirmelisiniz. 
+Bu p öğesinin card-number-help kimliği olmalı ve kart numarası giriş alanı tarafından aria-describedby özelliği kullanılarak referans gösterilmelidir.
+
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+
+      <section>
+        <h2>Your Cart</h2>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/spoon.jpg"
+          alt="Left-handed spoon"
+        />
+        <p>Left-handed spoon</p>
+        <p>$29.99</p>
+      </section>
+
+      <section>
+        <h2>Payment Information</h2>
+        <form action="/submit-payment" method="POST">
+          <div>
+            <label for="card-name"
+              >Cardholder Name <span aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="card-name" name="card-name" required="" />
+          </div>
+          <div>
+            <label for="card-number"
+              >Card Number <span aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              aria-describedby="card-number-help"
+              required=""
+            />
+            <p id="card-number-help">
+              Please enter your 16-digit card number without spaces or dashes.
+            </p>
+          </div>
+          <div>
+            <label for="expiry-date"
+              >Expiry Date <span aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="expiry-date"
+              name="expiry-date"
+              placeholder="MM/YY"
+              required=""
+            />
+          </div>
+          <div>
+            <label for="cvv"> CVV <span aria-hidden="true">*</span> </label>
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              required=""
+              aria-label="Card Verification Value"
+            />
+          </div>
+          <input type="submit" value="Place Order" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
