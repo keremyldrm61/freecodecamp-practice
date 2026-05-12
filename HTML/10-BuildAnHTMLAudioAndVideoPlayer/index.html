@@ -1,0 +1,53 @@
+<!-- Bir HTML Ses ve Video Oynatıcı Oluşturun
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri:
+
+1. Sayfanın ana başlığı için bir h1 öğesi olmalıdır.
+2. İki adet section öğesi olmalıdır.
+3. İlk section öğesinin içinde, oynatılan videonun başlığı için bir h2 öğesi olmalıdır.
+4. h2 öğesinin altında, kontrol düğmeleri ve width özniteliği içeren bir video öğesi olmalıdır. width özniteliği 640 olarak ayarlanmalıdır.
+5. video öğesinin içinde, bir video dosyasına yönlendiren src özniteliğine ve bir type özniteliğine sahip bir source öğesi bulunmalıdır.
+• https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4 adresini kullanabilirsiniz.
+6. İkinci bölüm öğesinin içinde, çalan şarkının başlığı için bir h2 öğesi bulunmalıdır.
+7. h2 öğesinin altında, denetimler ve döngü özniteliklerine sahip bir ses öğesi ile bir ses dosyasına yönlendiren bir src özniteliği bulunmalıdır.
+• https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3 adresini
+ya da
+• https://cdn.freecodecamp.org/curriculum/js-music-player/we-are-going-to-make-it.mp3 adresini kullanabilirsiniz.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Audio and Video Lab</title>
+  </head>
+  <body>
+    <main>
+      <h1>HTML Audio and Video Lab</h1>
+
+      <section>
+        <h2>What is the map method and how does it work?</h2>
+        <video controls="" width="640">
+          <source
+            src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+      <section>
+        <h2>Sailing Away</h2>
+        <audio
+          src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+          controls=""
+          loop=""
+        ></audio>
+      </section>
+    </main>
+  </body>
+</html>
