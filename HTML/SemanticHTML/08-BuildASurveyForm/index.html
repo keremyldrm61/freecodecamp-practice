@@ -1,0 +1,253 @@
+<!-- Anket Formu Oluşturma
+
+Bu örnek projeyle işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, kendi kişisel tarzınızı yansıtın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. "title" kimliğine sahip bir h1 öğesi içinde bir sayfa başlığı bulunmalıdır.
+2. "description" kimliğine sahip bir p öğesi içinde kısa bir açıklama bulunmalıdır.
+3. "survey-form" kimliğine sahip bir form öğesi olmalıdır.
+4. Form öğesinin içinde, "name" kimliğine ve "text" türüne sahip, adınızı girmek için gerekli bir giriş alanı olmalıdır.
+5. Form öğesinin içinde, "email" kimliğine sahip, e-postanızı girmek için gerekli bir giriş alanı olmalıdır.
+6. E-posta adresini doğru biçimde girmezseniz, bir HTML5 doğrulama hatası görmelisiniz.
+7. Form öğesinin içinde, "number" kimliğine sahip bir sayı girmek için bir giriş alanı bulunmalıdır.
+8. Sayı giriş alanı, sayılar dışındaki karakterleri kabul etmemelidir; bunu, bu tür karakterleri yazmanızı engelleyerek ya da bir HTML5 doğrulama hatası göstererek (tarayıcınıza bağlı olarak) gerçekleştirmelidir.
+9. min ve max öznitelikleriyle tanımlanan sayı girişi aralığının dışındaki sayıları girerseniz, bir HTML5 doğrulama hatası görmelisiniz.
+10. Ad, e-posta ve sayı giriş alanları için, formda her bir alanın amacını açıklayan ve şu kimliklere sahip ilgili etiket öğeleri bulunmalıdır: name-label, email-label ve number-label.
+11. Ad, e-posta ve sayı giriş alanları için, her bir alan için açıklama veya talimatlar içeren bir yer tutucu metin bulunmalıdır.
+12. form öğesinin içinde, "dropdown" kimliğine sahip bir açılır menü öğesi ve aralarından seçim yapabileceğiniz en az iki seçenek bulunmalıdır.
+13. form öğesinin içinde, "name" özniteliği kullanılarak gruplandırılmış en az iki radyo düğmesinden oluşan bir gruptan bir seçenek seçebilirsiniz.
+14. form öğesinin içinde, her birinin bir "value" özniteliğine sahip olması gereken bir dizi onay kutusundan birkaçını seçebilirsiniz.
+15. Form öğesinin içinde, ek yorumlar için bir textarea bulunmalıdır.
+16. Form öğesinin içinde, tüm girdileri göndermek için id'si "submit" olan bir düğme bulunmalıdır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required=""
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">
+            Age<span class="clue">(optional)</span>
+          </label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">
+              Select current role
+            </option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked=""
+            />Definitely
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe
+          </label>
+          <label>
+            <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select
+            id="most-like"
+            name="mostLike"
+            class="form-control"
+            required=""
+          >
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label>
+            <input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum
+          </label>
+          <label>
+            <input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
