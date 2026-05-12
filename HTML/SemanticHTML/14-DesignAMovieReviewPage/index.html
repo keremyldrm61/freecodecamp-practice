@@ -1,0 +1,66 @@
+<!-- Bir Film Eleştirisi Sayfası Tasarlayın
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testlerin başarılı olmasını sağlayarak laboratuvarı tamamlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Bir main öğeniz olmalıdır.
+2. Main öğesinin içinde, film başlığı için bir h1 öğesi bulunmalıdır.
+3. h1 öğesinin altında, film kapağını gösteren bir img öğesi olmalıdır. img öğenizde, görüntüyü açıklayan bir alt metni olmalıdır. 
+İsterseniz aşağıdaki görüntüyü kullanabilirsiniz: 
+https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png.
+4. Kısa bir film açıklaması içeren bir p öğesi olmalıdır.
+5. Film derecelendirmesini görüntülemek için başka bir p öğesi eklemelisiniz. Bu öğenin içinde, aşağıdakileri listelenen sırayla yer almalıdır:
+• "Film Puanı:" metnini içeren bir strong öğesi.
+• aria-hidden özniteliği true olarak ayarlanmış ve yıldızlar ⭐⭐⭐⭐⭐⭐⭐⭐⭐☆ kullanılarak puanın görsel temsilini içeren bir span öğesi.
+• span öğesinin ardından parantez içinde (ör. 9,2/10) yer alan, puanı temsil eden sayısal bir değer.
+6. "Oyuncular" metnini içeren bir h2 öğesi olmalıdır.
+7. Bir ul öğesi olmalıdır.
+8. ul öğesinin içinde, her biri oyuncunun adını içeren bir strong öğesi ve ardından "rolü" metninin önünde ilgili karakter adını içeren birden fazla li öğesi olmalıdır. (örn. James Holloway, Ethan Carter rolünde).
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Review</title>
+  </head>
+  <body>
+    <main class="review">
+      <h1>Movie Review: Rise Beyond</h1>
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png"
+        alt="The Rise Beyond movie poster, starring Ethan Carter. A portrait of a young boy standing on a stage with his back toward the audience, holding a guitar at his side, staring at a backdrop of a cityscape with the sun rising behind its tall buildings."
+      />
+      <p>
+        Rise Beyond is an uplifting drama that tells the story of Ethan Carter,
+        a young man from a small town who dreams of becoming a world-class
+        musician. Facing financial struggles and self-doubt, Ethan embarks on a
+        journey of resilience, guided by his mentor Professor Adams and
+        childhood friend Lena Mitchell. Through setbacks, failures, and moments
+        of triumph, Rise Beyond reminds us that our greatest potential lies
+        beyond our fears.
+      </p>
+      <p>
+        <strong>Movie Rating:</strong>
+        <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.2/10)
+      </p>
+
+      <h2>Cast Members</h2>
+      <ul>
+        <li><strong>James Holloway</strong> as Ethan Carter</li>
+        <li><strong>Olivia Sterling</strong> as Lena Mitchell</li>
+        <li><strong>William Lancaster</strong> as Professor Adams</li>
+        <li>
+          <strong>Maria Collins</strong> as Evelyn Carter (Ethan&#8217;s Mother)
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
