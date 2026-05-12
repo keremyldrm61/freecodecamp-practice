@@ -1,0 +1,120 @@
+<!-- Bir Video Derleme Sayfası Oluşturun
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri:
+
+1. body öğesinin tek alt öğesi olarak bir main öğesi bulunmalıdır.
+2. Sayfanızın konusunu içeren bir h1 öğesi bulunmalıdır.
+3. h1 öğesinin altında, sayfanızın konusunu tanıtan bir paragraf bulunmalıdır.
+4. İlk paragrafınızın altında üç adet section öğesi bulunmalıdır.
+5. Her bir section öğesi, sırasıyla bir h2 öğesi, bir paragraf ve bir iframe öğesi içermelidir.
+6. Üç iframe öğesinin src özniteliği, geçerli bir video bağlantısına ayarlanmış olmalıdır.
+7. Her bir iframe öğesinin ayrıca, gömülü içeriği tanımlayan bir title özniteliği ile öğeyi uygun boyuta ayarlamak için bir height ve bir width özniteliği bulunmalıdır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Compilation Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>Front-End Web Development</h1>
+      <p>
+        Front-End Web Development involves designing and building user
+        interfaces of websites using HTML, CSS, and JavaScript. It focuses on
+        creating visually appealing, interactive, and user-friendly websites.
+        Front-end developers ensure accessibility, performance optimization, and
+        adherence to web standards, blending creativity with technical
+        expertise.
+      </p>
+      <section>
+        <h2>HTML</h2>
+        <p>
+          HTML, or HyperText Markup Language, forms the backbone of web pages by
+          defining their basic structure and layout. It uses a series of
+          elements to display text, images, lists, tables, and other static
+          content on a web page.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GDGejH3SDNQ?si=KJYLgcz4kyyroYMB"
+          title="html and coding introduction video"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen=""
+        ></iframe>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <p>
+          CSS, or Cascading Style Sheets, is used to control the visual
+          presentation of HTML elements on a web page. It allows for customized
+          styling, including colors, fonts, layouts, and spacing, making
+          websites visually appealing. CSS also supports responsive design,
+          ensuring web pages look good on all devices.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OXGznpKZ_sA?si=s3KDSZvrhU_PU9XL"
+          title="css tutorial video"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen=""
+        ></iframe>
+      </section>
+      <section>
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript is a programming language that adds interactivity to static
+          web pages, enabling dynamic content updates, form validations,
+          animations, and responsive behaviors based on user interactions and
+          events.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/jS4aFq5-91M?si=zKQhHEYwU4tnMmVm"
+          title="javascript programming video"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen=""
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>
