@@ -1,0 +1,86 @@
+<!-- Fiyat Planları Sayfası Tasarımı
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri
+1. Sayfanızda "Fiyat Planları" metnini içeren bir h1 öğesi bulunmalıdır.
+2. Sayfanızda h1 öğesinin altında "pricing-container" sınıfına sahip bir div öğesi bulunmalıdır.
+• .pricing-container seçicisinin display özelliği flex, flex-wrap özelliği ise wrap olarak ayarlanmalıdır.
+3. .pricing-container öğesi içinde, fiyatlandırma planlarını göstermek üzere pricing-card sınıfına sahip üç div öğesi bulunmalıdır.
+• .pricing-card öğelerinden birinde, pricing-card sınıfına ek olarak basic-plan sınıfı da bulunmalıdır.
+• .pricing-card öğelerinden birinde, pricing-card sınıfına ek olarak pro-plan sınıfı da bulunmalıdır.
+• .pricing-card öğelerinden birinde, pricing-card sınıfına ek olarak premium-plan sınıfı da bulunmalıdır.
+4. .basic-plan öğenizde "Basic" metnini içeren bir h2 öğesi bulunmalıdır.
+5. .basic-plan öğenizde "$9/month" metnini içeren bir p öğesi bulunmalıdır.
+6. .pro-plan öğenizde "Pro" metnini içeren bir h2 öğesi bulunmalıdır.
+7. .pro-plan öğenizde "$19/month" metnini içeren bir p öğesi bulunmalıdır.
+8. .premium-plan öğenizde "Premium" metnini içeren bir h2 öğesi bulunmalıdır.
+9. .premium-plan öğenizde "$29/month" metnini içeren bir p öğesi bulunmalıdır.
+10. Her bir .pricing-card öğeniz şunları içermelidir:
+• Flexbox'ı kullanarak içeriği sütun halinde dizip, `space-between` özelliğini kullanarak alt öğeler arasındaki boşluğu eşitleyin.
+• `flex` özelliğini 0 0 200px olarak ayarlayarak tutarlı bir genişlik verin ve düzen içinde genişlemesini veya daralmasını önleyin.
+• `border` özelliğini 2px kalınlığında siyah çizgi olarak ayarlayın ve farklı kartların alanı nasıl kapladığını görün.
+11. .basic-plan öğesi, düzen içinde ilk sırada yer almalıdır. Bunun için order özelliğini kullanmalısınız.
+12. .pro-plan öğesi, düzen içinde ikinci sırada yer almalıdır. Bunun için order özelliğini kullanmalı ve diğer planlardan daha fazla yer kaplaması için flex-grow özelliğini 2 olarak ayarlamalısınız.
+13. .premium-plan öğesi, düzen içinde son sırada yer almalıdır. Bunun için order özelliğini kullanmalısınız.
+
+Not: Stil sayfanızı HTML'nize bağladığınızdan ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans Layout</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Pricing Plans</h1>
+    <div class="pricing-container">
+      <div class="pricing-card pro-plan">
+        <h2>Pro</h2>
+        <p class="price">$19/month</p>
+        <ul class="features">
+          <li><span class="check">✓</span> Access to our core features</li>
+          <li><span class="check">✓</span> Email support</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> Custom integrations</li>
+          <li><span class="cross">✗</span> Priority support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+
+      <div class="pricing-card basic-plan">
+        <h2>Basic</h2>
+        <p class="price">$9/month</p>
+        <ul class="features">
+          <li><span class="check">✓</span> Access to our core features</li>
+          <li><span class="check">✓</span> Email support</li>
+          <li><span class="cross">✗</span> Advanced analytics</li>
+          <li><span class="cross">✗</span> Custom integrations</li>
+          <li><span class="cross">✗</span> Priority support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+
+      <div class="pricing-card premium-plan">
+        <h2>Premium</h2>
+        <p class="price">$29/month</p>
+        <ul class="features">
+          <li><span class="check">✓</span> Access to our core features</li>
+          <li><span class="check">✓</span> Email support</li>
+          <li><span class="check">✓</span> Advanced analytics</li>
+          <li><span class="check">✓</span> Custom integrations</li>
+          <li><span class="check">✓</span> Priority support</li>
+        </ul>
+        <a href="#">Choose Plan</a>
+      </div>
+    </div>
+  </body>
+</html>
