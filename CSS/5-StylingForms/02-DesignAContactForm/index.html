@@ -1,0 +1,60 @@
+<!-- Bir İletişim Formu Tasarlayın
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri: 
+
+1. Formunuzu barındıracak, sınıfı form-container olan bir div öğeniz olmalıdır.
+2. .form-container öğesinin içinde bir form öğesi bulunmalıdır.
+3. Form öğesinin içinde aşağıdaki öğeler ve giriş alanları bulunmalıdır:
+• İçinde metin bulunan bir h2 öğesi.
+• Türü "text" olarak ayarlanmış, id, name ve required özniteliklerine sahip bir ad giriş alanı.
+• Türü "email" olarak ayarlanmış, id, name ve required özniteliklerine sahip bir e-posta giriş alanı.
+• id, name ve required özniteliklerine sahip bir mesaj metin alanı.
+• "Gönder" metnine sahip ve type özniteliği "submit" olarak ayarlanmış bir düğme öğesi.
+4. Her bir input ve textarea öğesinin, for özniteliği öğenin id'sine ayarlanmış olan karşılık gelen bir label öğesi olmalıdır.
+5. .form-container öğesinin bir arka plan rengi olmalı ve border-radius, padding ve width değerleri belirlenmiş olmalıdır.
+6. label öğelerinin bir kenar boşluğu ve yazı tipi rengi olmalıdır.
+7. input ve textarea öğelerinin şu alanlar için değerleri olmalıdır:
+• width - genişlik
+• padding - iç dolgu
+• Margin on the bottom - alt kenar boşluğu
+8. Düğme öğesinin şunlara sahip olması gerekir:
+• Background color - Arka plan rengi
+• Font size apart from the default - Varsayılanın dışındaki yazı tipi boyutu
+9. Düğmenin üzerine fareyi getirdiğinizde arka plan rengini değiştiren bir efekt olmalıdır.
+
+Not: HTML dosyanıza stil sayfanızı eklediğinizden ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Form Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required=""></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
