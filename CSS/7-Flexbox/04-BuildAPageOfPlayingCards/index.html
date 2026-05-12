@@ -1,0 +1,128 @@
+<!-- Bir Oyun Kartları Sayfası Oluşturun
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin.
+
+Kullanıcı Hikayeleri: 
+
+1. En az üç oyun kağıdı gösteren bir web sayfası oluşturmalısınız.
+2. ID'si "playing-cards" olan bir ana öğe olmalıdır.
+3. #playing-cards öğesinin içinde, her biri "card" sınıfına sahip en az üç div öğesi olmalıdır.
+4. Her bir .card öğesinin içinde, ilki "left", ikincisi "middle" ve üçüncüsü "right" sınıfına sahip üç div öğesi olmalıdır.
+5. #playing-cards öğeniz, alt öğelerini yatay olarak ortalamak, satır sonu yapmalarını sağlamak ve aralarına 20 piksel boşluk bırakmak için flexbox kullanmalıdır.
+6. Her bir .card öğeniz, alt öğelerini space-between özelliğini kullanarak hizalamak için flexbox kullanmalıdır.
+7. Her bir .left öğeniz, flexbox öğe özelliklerini kullanarak kendisini üst öğesinin başlangıcına hizalamalıdır.
+8. Her bir .middle öğeniz, flexbox öğe özelliklerini kullanarak kendisini üst öğesinin ortasına hizalamalıdır.
+9. Her bir .right öğeniz, üst öğesinin sonuna hizalanmak için flexbox öğe özelliklerini kullanmalıdır.
+10. Her bir .middle öğeniz, alt öğelerini bir sütun halinde görüntülemek için flexbox kullanmalıdır.
+
+İsterseniz kartlarınızda kullanmak üzere kopyalayıp yapıştırabileceğiniz bazı semboller şunlardır: ♠, ♣, ♥ ve ♦.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing Cards</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main id="playing-cards">
+      <div class="card">
+        <div class="left">
+          <div>A</div>
+          <div>&spades;</div>
+        </div>
+        <div class="middle">
+          <div>&spades;</div>
+        </div>
+        <div class="right">
+          <div class="flipped">&spades;</div>
+          <div class="flipped">A</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+          <div>2</div>
+          <div>&clubs;</div>
+        </div>
+        <div class="middle">
+          <div>&spades;</div>
+          <div class="flipped">&spades;</div>
+        </div>
+        <div class="right">
+          <div class="flipped">&spades;</div>
+          <div class="flipped">2</div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="left">
+          <div>3</div>
+          <div>&hearts;</div>
+        </div>
+        <div class="middle">
+          <div>&hearts;</div>
+          <div>&hearts;</div>
+          <div class="flipped">&hearts;</div>
+        </div>
+        <div class="right">
+          <div class="flipped">&hearts;</div>
+          <div class="flipped">3</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="left">
+          <div>4</div>
+          <div>&clubs;</div>
+        </div>
+        <div class="middle">
+          <div class="middle-section">
+            <div>&clubs;</div>
+            <div>&clubs;</div>
+          </div>
+          <div class="middle-section">
+            <div class="flipped">&clubs;</div>
+            <div class="flipped">&clubs;</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="flipped">&clubs;</div>
+          <div class="flipped">4</div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="left">
+          <div>5</div>
+          <div>&diams;</div>
+        </div>
+        <div class="middle">
+          <div class="middle-section">
+            <div>&diams;</div>
+            <div>&diams;</div>
+          </div>
+          <div class="middle-section">
+            <div>&diams;</div>
+          </div>
+          <div class="middle-section">
+            <div>&diams;</div>
+            <div>&diams;</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="flipped">&diams;</div>
+          <div class="flipped">5</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
