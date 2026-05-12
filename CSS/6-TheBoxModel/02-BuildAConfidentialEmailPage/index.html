@@ -1,0 +1,55 @@
+<!-- Gizli E-posta Sayfası Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın.
+
+Kullanıcı Hikayeleri:
+
+1. "email" kimliğine sahip bir ana öğeniz olmalıdır.
+2. #email öğenizin iç dolgusu 50 piksel, üst kenar boşluğu 50 piksel, genişliği 500 piksel ve kenarlığı 2 piksel olmalıdır.
+3. İç dolgular ve kenarlıklar dahil olmak üzere #email öğenizin toplam genişliği 500 piksel olmalıdır.
+4. #email öğenizin içinde, biri "confidential" ve diğeri "top-secret" kimliğine sahip iki div öğesi olmalıdır.
+5. #confidential ve #top-secret öğelerinizin görüntüleme özelliği inline-block olmalıdır.
+6. #confidential ve #top-secret öğelerinizde iç dolgu, sol kenar boşluğu ve kenarlık bulunmalıdır.
+7. #confidential öğesinde "CONFIDENTIAL" metni bulunmalıdır.
+8. #top-secret öğesinde "TOP SECRET" metni bulunmalıdır.
+9. #confidential ve #top-secret öğeleriniz CSS transform kullanılarak döndürülmelidir.
+10. #email öğenizin içinde en az üç paragraf öğesi bulunmalıdır.
+11. Paragraf öğelerinizin içinde, "blurred" sınıfına sahip en az üç span öğesi bulunmalıdır.
+12. CSS filtresi kullanarak öğeyi 3 piksel bulanıklaştıran bir "blurred" seçicisi olmalıdır.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Marshmallow Mission</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="email">
+      <div id="confidential">CONFIDENTIAL</div>
+      <p>Dear Agent <span class="blurred">S'more,</span></p>
+      <p>
+        We have an emergency. The secret formula for our
+        <span class="blurred">Mega Marshmallow</span> has been compromised. This
+        formula is what makes our marshmallows the fluffiest and most delicious.
+      </p>
+      <p>
+        We suspect that <span class="blurred">Professor Puff</span> is behind
+        this. He has taken the formula to his hidden laboratory. Your mission is
+        to infiltrate the lab and secure the formula before it's too late.
+      </p>
+      <p>
+        Be sure to keep the lab's location confidential. Any leak of this
+        information could jeopardize the entire operation.
+      </p>
+      <div id="top-secret">TOP SECRET</div>
+    </main>
+  </body>
+</html>
