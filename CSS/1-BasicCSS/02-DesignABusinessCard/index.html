@@ -1,0 +1,66 @@
+<!-- Bir Kartvizit Tasarlayın
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testlerin başarılı olmasını sağlayarak laboratuvarı tamamlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Diğer tüm öğeleri içerecek, sınıf özniteliği değeri "business-card" olan bir div öğeniz olmalıdır.
+2. .business-card öğesinin içinde, class özniteliğinin değeri profile-image olan bir img öğesi bulunmalıdır. 
+İsterseniz resim kaynağını https://cdn.freecodecamp.org/curriculum/labs/flower.jpg olarak ayarlayabilirsiniz. 
+Anlamlı bir açıklama içeren bir alt metni olmalıdır.
+3. .business-card öğesinin içinde, img öğesinin ardından, sırasıyla full-name, designation ve company değerlerine sahip class özniteliğine sahip üç p öğesi bulunmalıdır.
+4. İlk p öğesi adınızı içermelidir.
+5. İkinci p öğesi unvanınızı içermelidir.
+6. Üçüncü p öğesi şirket adınızı içermelidir.
+7. Üçüncü p öğesinin altında bir hr öğesi bulunmalıdır.
+8. hr öğesinin ardından iki adet p öğesi bulunmalıdır. İlk p öğesinde metin olarak bir e-posta adresi yer almalıdır. İkinci p öğesindeki metin ise bir telefon numarası olmalıdır.
+9. Bu iki p öğesinin ardından, "portfolio-link" sınıfına sahip, metni "Portfolio" olan ve geçerli bir URL'ye yönlendiren bir a öğesi bulunmalıdır.
+10. Portföy bağlantısını içeren a öğesinin ardından bir hr öğesi bulunmalıdır.
+11. "social-media" değerine sahip bir class özniteliği olan başka bir div öğesi olmalıdır. Bu öğenin içinde, "Bana ulaşın" metnini içeren bir h2 öğesi bulunmalıdır.
+12. .social-media öğelerinin içinde üç adet a öğesi bulunmalıdır. Bu a öğeleri sırasıyla Twitter, LinkedIn ve GitHub metinlerini içermeli ve geçerli web sitelerine bağlantılar sağlamalıdır.
+13. HTML dosyasının head bölümünde link etiketini kullanarak styles.css stil sayfasını bağlamalısınız.
+14. Sayfanızın arka plan rengi rosybrown olmalıdır. Genel yazı tipi Arial olmalı, yedek yazı tipi ise sans-serif olmalıdır.
+15. .business-card seçicisi, öğenin genişliğini 300 piksel olarak ayarlamak ve istediğiniz arka plan rengini belirlemek için gerekli özelliklere sahip olmalıdır. 
+Ayrıca, her yönden 20 piksel iç boşluk ve üst kenar boşluğu olarak 100 piksel ayarlamalısınız. 
+Metin ortalanmalı ve yazı tipi boyutu 16 piksel olmalıdır. 
+Sol ve sağ kenar boşlukları "auto" olarak ayarlanmalıdır.
+16. .profile-image seçicisinin max-width özelliği %100 olarak ayarlanmalıdır.
+17. Tüm p öğelerinin üst ve alt kenar boşluğu 5 piksel olmalıdır.
+18. Sayfadaki hiçbir bağlantı altı çizili olmamalıdır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Business Card</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="business-card">
+      <img
+        src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg"
+        alt="A vibrant flower in full bloom"
+        class="profile-image"
+      />
+      <p class="full-name">Your Name</p>
+      <p class="designation">Software Developer</p>
+      <p class="company">@freeCodeCamp</p>
+      <hr />
+      <p>Email: your-email@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <a class="portfolio-link" href="http://example.com">Portfolio</a>
+      <hr />
+      <div class="social-media">
+        <h2>Connect with me</h2>
+        <a href="http://twitter.com/">Twitter</a>
+        <a href="http://linkedin.com/">LinkedIn</a>
+        <a href="http://github.com/">GitHub</a>
+      </div>
+    </div>
+  </body>
+</html>
