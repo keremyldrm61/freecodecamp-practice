@@ -1,0 +1,81 @@
+<!-- Kitap Kataloğu Tablosu Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, kendi kişisel tarzınızı yansıtın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve laboratuvarı tamamlamak için tüm testlerin başarılı olmasını sağlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. Kitap bilgilerini listeleyen bir tablo öğesi oluşturmalısınız.
+2. Tablonuzda, içinde bir satır bulunan bir tablo başlığı öğesi bulunmalıdır.
+3. Tablo başlığı öğenizdeki satırda, sırasıyla "Başlık", "Yazar", "Tür" ve "Yayın Yılı" metinlerini içeren dört tablo başlığı öğesi bulunmalıdır.
+4. Tablonuzda, içinde en az beş satır bulunan bir tablo gövdesi öğesi bulunmalıdır.
+5. Tablonuzun gövdesindeki her satırda, kitabın Başlığı, Yazarı, Türü ve Yayın Yılı bilgilerini gösteren dört tablo veri öğesi bulunmalıdır.
+6. Tablonuzda, içinde tek bir satır bulunan bir tablo altbilgi öğesi bulunmalıdır.
+7. Tablo altbilgi öğenizdeki satırda, dört sütuna yayılan ve "Toplam Kitap Sayısı: N" metnini içeren bir tablo veri öğesi bulunmalıdır; burada N, tablonuzdaki kitap sayısıyla değiştirilmelidir.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalog</title>
+  </head>
+  <body>
+    <h1>Book Catalog</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Publication Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            How to Contribute to Open-Source Projects &ndash; A Handbook for
+            Beginners
+          </td>
+          <td>Hillary Nyakundi</td>
+          <td>Open Source</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Learn Linux for Beginners: From Basics to Advanced Techniques</td>
+          <td>Zaira Hira</td>
+          <td>Linux</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>How to Learn to Code and Get a Developer Job</td>
+          <td>Quincy Larson</td>
+          <td>Learn To Code</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>
+            The Regular Expressions Book &ndash; RegEx for JavaScript Developers
+          </td>
+          <td>Kolade Chris</td>
+          <td>Regular Expressions</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>The Python Code Example Handbook</td>
+          <td>Farhan Hasin Chowdhury</td>
+          <td>Python</td>
+          <td>2023</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Books: 5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
