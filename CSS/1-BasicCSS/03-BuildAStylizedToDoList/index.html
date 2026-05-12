@@ -1,0 +1,91 @@
+<!-- Stilize Bir Yapılacaklar Listesi Oluşturun
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel stilinizi katın.
+
+Bu alıştırmada, bağlantıların üzerine fareyle gelindiğinde, odaklandığında, tıklandığında ve ziyaret edildiğinde uygulanabilecek farklı stilleri uygulayacağız.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testlerin başarılı olmasını sağlayarak alıştırmayı tamamlayın. 
+
+Kullanıcı Hikayeleri:
+
+1. "todo-list" sınıfına sahip bir sıralanmamış liste olmalıdır.
+2. Sıralanmamış listenin içinde dört liste öğesi bulunmalıdır.
+3. Her liste öğesinin içinde şunlar bulunmalıdır:
+• Türü "checkbox" olan ve "id" özniteliği benzersiz bir değere ayarlanmış bir input öğesi.
+• "for" özniteliği, ilgili input öğesinin "id" değerine ayarlanmış bir label öğesi.
+• "sub-item" sınıfına sahip bir sıralanmamış liste.
+• İçinde bir anchor öğesi bulunan bir liste öğesi. Bu anchor öğesi, "sub-item-link" sınıfına sahip olmalı, geçerli bir "href" değeri içermeli ve bağlantının yeni bir sekmede açılmasını sağlayan bir "target" değeri taşımalıdır.
+4. a etiketlerinizde herhangi bir metin süslemesi olmamalıdır.
+5. Henüz tıklanmamış bağlantıların metin rengini istediğiniz bir renge ayarlamalısınız.
+6. Bağlantılarınız tıklandığında, renk istediğiniz başka bir renge değişmelidir.
+7. Bağlantılarınızın üzerine fareyle gelindiğinde, renk istediğiniz başka bir renge değişmelidir.
+8. Bağlantılarınız odaklandığında, bağlantının çevresinde renkli bir çerçeve bulunmalıdır.
+9. Bağlantılarınız tıklandığında, renk seçtiğiniz başka bir renge değişmelidir.
+
+Not: Stil sayfanızı HTML dosyanıza eklediğinizden ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My To-Do List</h1>
+      <ul class="todo-list">
+        <li>
+          <input type="checkbox" id="task1" />
+          <label for="task1">Explore gaming keyboards</label>
+          <ul class="sub-item">
+            <li>
+              <a href="#" target="_blank" class="sub-item-link">Store link</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <input type="checkbox" id="task2" />
+          <label for="task2">Finish the report</label>
+          <ul class="sub-item">
+            <li>
+              <a href="#" target="_blank" class="sub-item-link"
+                >Request Access
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <input type="checkbox" id="task3" />
+          <label for="task3">View Phone's Warranty</label>
+          <ul class="sub-item">
+            <li>
+              <a href="#" target="_blank" class="sub-item-link"
+                >View Receipts
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <input type="checkbox" id="task4" />
+          <label for="task4">Check Processor Specs</label>
+          <ul class="sub-item">
+            <li>
+              <a href="#" target="_blank" class="sub-item-link"
+                >View Model Number
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
