@@ -1,3 +1,41 @@
+<!-- Ay Yörüngesi Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama oluşturun. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Bu laboratuvarda, HTML ve CSS kullanarak Ay'ın Dünya etrafındaki yörüngesinin basit bir animasyonunu oluşturacaksınız. Dünya, sistemin merkezinde olacak ve Ay onun etrafında yörüngede dönecektir.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testleri geçerek laboratuvarı tamamlayın.
+
+Kullanıcı Hikayeleri:
+
+1. Yükseklik değerini görüntü alanının %100'ü olarak ayarlayıp body öğesinde bir flexbox düzeni belirleyerek tüm öğeleri sayfanın ortasına hizalamalısınız.
+2. space sınıfına sahip bir div öğeniz olmalıdır.
+3. .space öğesinin içinde, sırasıyla earth ve orbit sınıflarına sahip iki div öğesi daha bulunmalıdır.
+4. .orbit öğesinin içinde ise moon sınıfına sahip başka bir div öğesi bulunmalıdır.
+5. "space" sınıfına sahip div öğesi, sayfa üzerinde ortalanmalı ve genişliği ile yüksekliği 200 piksel olmalıdır.
+6. "space" sınıfına sahip div öğesi, göreceli konumlandırma kullanmalıdır.
+7. .earth öğesi mutlak konumlandırma kullanmalıdır. 
+.earth öğesinin merkezini hem dikey (üst) hem de yatay (sol) eksenlerde üst öğesinin orta noktasına konumlandırın. 
+Ardından, .earth öğesini kendi genişliği ve yüksekliğinin yarısı kadar geriye kaydırarak üst öğesi olan .space öğesinin ortasına hizalayın.
+8. .earth öğesinin genişliği ve yüksekliği 100 piksel olmalıdır.
+9. .orbit öğesinin genişliği ve yüksekliği 200 piksel olmalıdır.
+10. .orbit öğesi mutlak konumlandırma kullanılarak konumlandırılmalıdır. 
+Sağ alt köşesi, hem dikey hem de yatay eksenlerde %50 kaydırma yapan bir transform özelliği kullanılarak .space öğesinin merkezine getirilmelidir.
+11. Ay'ın Dünya etrafındaki yörünge yolu bir daire olmalıdır.
+12. .moon öğesi mutlak konumlandırma kullanılarak konumlandırılmalı ve genişliği ile yüksekliği 30 piksel olmalıdır. 
+.moon öğesi, .orbit öğesinin en üstüne yerleştirilmeli ve yatay olarak ortalanmalıdır.
+13. .moon öğesinin yatay konumunu, öğeyi genişliğinin yarısı kadar sola kaydırarak daha da ayarlamalısınız.
+14. .earth seçicisinin bir arka plan rengi ve %50 kenar yuvarlaklığı olmalıdır.
+15. .moon seçicisinin bir arka plan rengi ve %50 kenar yuvarlaklığı olmalıdır.
+16. .orbit öğesini kendi merkezi etrafında 360 derece döndüren bir @keyframes orbit animasyonu tanımlamalısınız. 
+Bu animasyonu, 5 saniyelik süre, doğrusal zamanlama işlevi ve sonsuz tekrar sayısı ile .orbit öğesine uygulamalısınız.
+
+Not: Stil sayfanızı HTML dosyanıza eklediğinizden ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
 <!doctype html>
 <html lang="en">
   <head>
