@@ -1,108 +1,157 @@
 # 📚 freeCodeCamp Practice
 
-A collection of my **freeCodeCamp practice projects and exercises** created while improving my HTML, CSS, accessibility, responsive design, and frontend development skills.
+Bu repository, `freeCodeCamp` üzerinden tamamladığım HTML ve CSS odaklı pratik çalışmalarını düzenli bir şekilde arşivlemek için hazırlanmıştır. Amaç; temel web geliştirme konularını proje bazlı tekrar etmek, ilerlemeyi takip etmek ve GitHub üzerinde temiz bir öğrenme portföyü oluşturmaktır.
 
-This repository is organized as a learning archive where each folder represents a separate exercise or mini project.
+## 🔍 Kısa Bakış
 
----
+- Toplam `67` çalışma bulunur.
+- `HTML` tarafında `28` egzersiz yer alır.
+- `CSS` tarafında `39` egzersiz yer alır.
+- Çalışmalar konu başlıklarına göre numaralandırılmış klasörler içinde tutulur.
 
-## 🎯 Purpose
+## 🔗 Repository Bağlantısı
 
-The main goal of this repository is to:
+- GitHub: [keremyldrm61/freecodecamp-practice](https://github.com/keremyldrm61/freecodecamp-practice)
 
-- ✅ Practice core frontend development concepts
-- ✅ Improve HTML and CSS fundamentals
-- ✅ Build responsive and accessible layouts
-- ✅ Keep my learning progress organized
-- ✅ Create a clean portfolio reference on GitHub
+Bu repo statik HTML ve CSS egzersizlerinden oluştuğu için şu an ayrı bir production deployment veya live demo bağlantısı bulunmuyor.
 
----
+## 🗂️ İçerik Kapsamı
 
-## 🛠️ Technologies Used
+### 🌐 HTML Konuları
 
-- 🌐 HTML5
-- 🎨 CSS3
-- ♿ Accessibility Principles
-- 📱 Responsive Design
-- 🧩 Semantic HTML
-- 🖼️ Layout & UI Components
+- `01-BasicHTML`
+- `02-SemanticHTML`
+- `03-FormsAndTables`
+- `04-Accessibility`
 
----
+### 🎨 CSS Konuları
 
-## 📁 Project List
+- `01-BasicCSS`
+- `02-DesignAndAbsoluteRelativeUnits`
+- `03-PseudoClassesAndElements`
+- `04-Colors`
+- `05-StylingForms`
+- `06-TheBoxModel`
+- `07-Flexbox`
+- `08-Typography`
+- `09-Accessibility`
+- `10-Positioning`
+- `11-AttributeSelectors`
+- `12-ResponsiveDesign`
+- `13-Variables`
+- `14-Grid`
+- `15-Animations`
 
-| #   | Project / Exercise             | Focus Area                  |
-| --- | ------------------------------ | --------------------------- |
-| 01  | Accessibility Quiz             | Accessibility, Forms        |
-| 02  | Blog Post Card                 | Card Layout, Styling        |
-| 03  | Business Card                  | Basic Layout, Typography    |
-| 04  | Camper Cafe                    | Menu Design, CSS Styling    |
-| 05  | Colored Boxes                  | Box Model, Colors           |
-| 06  | Colored Boxes Layout           | Layout Practice             |
-| 07  | Colored Markers                | CSS Colors, Gradients       |
-| 08  | Confidential Email             | Typography, Layout          |
-| 09  | Contact Form                   | Forms, Inputs               |
-| 10  | Event Flyer                    | Visual Design, Layout       |
-| 11  | FCC Cat Painting               | CSS Art                     |
-| 12  | Game Settings Panel            | UI Components               |
-| 13  | Greeting Card                  | Styling, Layout             |
-| 14  | House Painting                 | CSS Illustration            |
-| 15  | Job Application Form           | Forms, Validation Structure |
-| 16  | Newspaper Article              | Text Layout, Typography     |
-| 17  | Nutritional Label              | CSS Layout, Typography      |
-| 18  | Parent Teacher Conference Form | Forms, Accessibility        |
-| 19  | Photo Gallery                  | Flexbox / Grid Layout       |
-| 20  | Playing Cards                  | CSS Positioning             |
-| 21  | Pricing Plans Layout Page      | Responsive Layout           |
-| 22  | Registration Form              | Form Design                 |
-| 23  | Rothko Painting                | CSS Art                     |
-| 24  | Selection Feature Page         | UI Section Design           |
-| 25  | Styled To-Do List              | List Styling                |
-| 26  | Tribute Page                   | Semantic HTML, Page Layout  |
+## ✨ Öne Çıkan Çalışmalar
 
----
+Repository içinde aşağıdaki türlerde pratikler yer alır:
 
-## 📌 What I Learned
+- Semantik HTML sayfa yapıları
+- Form ve tablo egzersizleri
+- Erişilebilirlik odaklı markup çalışmaları
+- Flexbox ve Grid düzenleri
+- Responsive tasarım örnekleri
+- CSS değişkenleri ve attribute selector kullanımı
+- Positioning ve layout uygulamaları
+- Animasyon ve görsel CSS çalışmaları
 
-Through these exercises, I practiced:
+Örnek proje başlıklarından bazıları:
 
-- 🧱 Building semantic HTML structures
-- 🎨 Styling pages with CSS
-- 📐 Using spacing, alignment, and layout techniques
-- ♿ Writing more accessible markup
-- 📱 Creating responsive page structures
-- 🧠 Improving problem-solving skills with small frontend tasks
+- `Build a Quiz Webpage`
+- `Build a Technical Documentation Page`
+- `Build a Product Landing Page`
+- `Build a Personal Portfolio`
+- `Build a Flappy Penguin`
+- `Build a House Painting`
+- `Build a City Skyline`
 
----
+## 📁 Klasör Yapısı
 
-## 🚀 How to Use This Repository
-
-You can clone this repository and open each project folder separately:
-
-```bash
-git clone https://github.com/your-username/freecodecamp-practice.git
+```text
+freecodecamp-practice/
+├─ HTML/
+│  ├─ 01-BasicHTML/
+│  ├─ 02-SemanticHTML/
+│  ├─ 03-FormsAndTables/
+│  └─ 04-Accessibility/
+├─ CSS/
+│  ├─ 01-BasicCSS/
+│  ├─ 02-DesignAndAbsoluteRelativeUnits/
+│  ├─ 03-PseudoClassesAndElements/
+│  ├─ 04-Colors/
+│  ├─ 05-StylingForms/
+│  ├─ 06-TheBoxModel/
+│  ├─ 07-Flexbox/
+│  ├─ 08-Typography/
+│  ├─ 09-Accessibility/
+│  ├─ 10-Positioning/
+│  ├─ 11-AttributeSelectors/
+│  ├─ 12-ResponsiveDesign/
+│  ├─ 13-Variables/
+│  ├─ 14-Grid/
+│  └─ 15-Animations/
+├─ .gitignore
+└─ README.md
 ```
 
-Then open any project folder in your code editor and run the HTML file in your browser.
+## 🛠️ Kullanılan Teknolojiler
 
----
+- `HTML5`
+- `CSS3`
+- Semantik HTML
+- Form ve tablo yapıları
+- Accessibility prensipleri
+- Flexbox
+- CSS Grid
+- Responsive Design
+- CSS Variables
+- CSS Animations
 
-## 📈 Learning Progress
+Bu repository içinde frontend framework, backend servis, package manager script yapısı veya API entegrasyonu bulunmaz. Çalışmalar doğrudan tarayıcıda açılabilen statik egzersizlerden oluşur.
 
-This repository will continue to grow as I complete more freeCodeCamp exercises and projects.
+## 🚀 Kurulum ve Kullanım
 
----
+Repository’yi klonlayın:
 
-## 👨‍💻 Author
+```bash
+git clone https://github.com/keremyldrm61/freecodecamp-practice.git
+cd freecodecamp-practice
+```
+
+Ardından istediğiniz egzersiz klasörünü açıp ilgili `index.html` dosyasını tarayıcıda çalıştırabilirsiniz.
+
+Örnek:
+
+```bash
+CSS/14-Grid/03-BuildAProductLandingPage/index.html
+HTML/04-Accessibility/07-BuildAMultimediaPlayer/index.html
+```
+
+## 📈 Çalışma Yaklaşımı
+
+Bu repo aşağıdaki amaçlarla düzenli tutulur:
+
+- Konuları adım adım ve sıralı şekilde arşivlemek
+- Her egzersizi ayrı commit geçmişiyle takip etmek
+- Öğrenme sürecini proje bazlı görünür kılmak
+- İleride referans olarak kullanılabilecek küçük örnekler üretmek
+
+## 📝 Geliştirici Notları
+
+- Bu repo bir `monorepo uygulama` değil, öğrenme arşividir.
+- `package.json`, build pipeline veya deployment konfigürasyonu bulunmaz.
+- Çalışmaların çoğu tek başına açılabilen bağımsız HTML/CSS dosyalarından oluşur.
+- Klasör isimlerinde sıralama için `01`, `02`, `03` biçiminde zero-padded yapı kullanılır.
+
+## 👨‍💻 Yazar
 
 **Kerem Yıldırım**
 
-- GitHub: https://github.com/keremyldrm61
-- LinkedIn: https://www.linkedin.com/in/kerem-yildirim-ky/
+- GitHub: [@keremyldrm61](https://github.com/keremyldrm61)
+- LinkedIn: [kerem-yildirim-ky](https://www.linkedin.com/in/kerem-yildirim-ky/)
 
----
+## ⭐ Not
 
-## ⭐ Note
-
-This repository is part of my frontend development learning journey.  
+Bu proje eğitim ve pratik amacıyla geliştirilmektedir. İçerikte yer alan çalışmalar, freeCodeCamp egzersizleri temel alınarak öğrenme sürecini desteklemek için hazırlanmıştır.
+arning journey.  
 The projects are based on freeCodeCamp exercises and are used for educational purposes.
