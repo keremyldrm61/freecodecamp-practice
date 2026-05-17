@@ -1,0 +1,244 @@
+<!-- Kişisel Portföy Oluşturma
+
+Bu örnek projeye işlevsel olarak benzer bir uygulama geliştirin. Örnek projeyi aynen kopyalamamaya çalışın, ona kendi kişisel tarzınızı katın.
+
+Amaç: Aşağıdaki kullanıcı hikayelerini yerine getirin ve tüm testlerin başarılı olmasını sağlayarak laboratuvarı tamamlayın.
+
+Kullanıcı Hikayeleri: 
+
+1. Portföyünüzde, id'si welcome-section olan bir karşılama bölümü bulunmalıdır.
+2. Karşılama bölümünde, metin içeren bir h1 öğesi bulunmalıdır.
+3. Portföyünüzde, id'si project-section olan bir projeler bölümü bulunmalıdır.
+4. Projeler bölümü, bir projeyi barındıracak şekilde class'ı project-tile olan en az bir öğe içermelidir.
+5. Projeler bölümü, bir projeye yönlendiren en az bir bağlantı içermelidir.
+6. Portföyünüzde, id'si navbar olan bir gezinme çubuğu bulunmalıdır.
+7. Gezinti çubuğu, sayfanın farklı bölümlerine gitmek için tıklayabileceğiniz en az bir bağlantı içermelidir.
+8. Portföyünüzde, GitHub veya freeCodeCamp profilinizi yeni bir sekmede açan, profile-link kimliğine sahip bir bağlantı bulunmalıdır.
+9. Portföyünüzde en az bir medya sorgusu bulunmalıdır.
+10. Hoş geldiniz bölümünün yüksekliği, görüntü alanının yüksekliğine eşit olmalıdır.
+11. Navigasyon çubuğu her zaman görüntü alanının en üstünde olmalıdır.
+
+Not: Stil sayfanızı HTML'nize bağladığınızdan ve CSS'inizi uyguladığınızdan emin olun.
+
+Not: Aşağıdaki yazılan kodlar tüm adımların tamamlandığı çalışmadır.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#project-section">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I am Mimic</h1>
+      <p>a web developer</p>
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="project-section" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tribute Page
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Random Quote Machine
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            JavaScript Calculator
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/mVEJag"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Map Data Across the Globe
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/wGqEga"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Wikipedia Viewer
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tic Tac Toe Game
+            <span class="code">/&gt;</span>
+          </p>
+        </a>
+      </div>
+
+      <a
+        href="https://codepen.io/FreeCodeCamp/"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a href="mailto:example@example.com" class="btn contact-details"
+          ><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="tel:555-555-5555" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <p>
+        © Created for
+        <a href="https://www.freecodecamp.org/" target="_blank"
+          >freeCodeCamp <i class="fab fa-free-code-camp"></i
+        ></a>
+      </p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+  </body>
+</html>
